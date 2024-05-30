@@ -30,4 +30,9 @@ import userRouter from "./routes/user.routes.js";
 //routes declaration
 app.use("/api/v1/users", userRouter);
 
+// Route handler for the root URL
+app.get("/", (req, res) => {
+  res.send("Welcome to SecureLink 360!");
+});
+
 export default app;
